@@ -77,12 +77,41 @@ After feature extraction, I compiled everything into a structured Excel file (an
 
 |Filename|Label|Mean|Std Dev|Entropy|Edge Density|Center Brightness|is_Augumented|
 |--------|-----|----|-------|-------|------------|-----------------|-------------|
+|Mild_1234.jpg|MildDemented|....|....|....|....|....|True|
+|Non_4567.jpg|NonDemented|....|....|....|....|....|False|
+
+<img width="540" height="252" alt="All Disease" src="https://github.com/user-attachments/assets/02c44621-aff7-496a-81a1-753043b06248" />
+
+
+This dataset became the core input for my Power BI dashboard.
 
 
 
 ### Power BI Dashboard
+Once the Excel dataset was ready, I imported it into Power BI to build an interactive dashboard that visualizes disease patterns, image features, and comparisons between diagnosis classes.
+
+Key Visuals Include:
+- Disease Progression Score: Based on entropy and center brightness
+- Scan Disorder Level: Comparing all diagnosis classes
+- Radiance Progression: Mean brightness across classes
+- Top Diseased vs. Healthy Scans
+- Interactive Table: All images with their extracted features
+- Entropy Distribution: Shows lower entropy in Alzheimer's patients
+- Brightness Variation: Used to separate Normal vs. Diseased groups
+
+<img width="870" height="471" alt="image" src="https://github.com/user-attachments/assets/5e0a0ee7-3018-4b70-be93-8073a19f8829" />
+
+<img width="870" height="481" alt="image" src="https://github.com/user-attachments/assets/87c8e106-974c-4e4f-b606-1189cde5301c" />
+
+The dashboard allows filtering by diagnosis, viewing statistical differences, and exploring trends across thousands of scans in just a few clicks.
+
+
 
 ### Insights and Findings
+The following insights and findings were obtained
+1. Diseased brains showed lower entropy and reduced center brightness 
+2. NonDemented scans had clearer structures and higher brightness variation 
+3. Entropy and brightness levels may support early Alzheimer’s detection
 
 ### Recommendations
 
