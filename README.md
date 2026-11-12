@@ -114,5 +114,32 @@ The following insights and findings were obtained
 3. Entropy and brightness levels may support early Alzheimer’s detection
 
 ### Recommendations
+Based on the image analysis and patterns observed across 44,000+ MRI brain scans, the following recommendations are proposed:
+
+#### 1. Use Image-Based Features for Early Screening
+Features like entropy and center brightness showed significant differences between healthy and diseased scans — especially in Mild and VeryMildDemented categories.
+
+#### 2. Integrate Feature Extraction into Clinical Tools
+The Python-based feature extraction pipeline could be integrated into:
+- Radiology image viewers
+- Hospital EMR systems
+- Research platforms
+
+Automatically tagging or flagging scans with abnormal entropy or brightness levels can help doctors prioritize high-risk patients.
+
+#### 3. Extend Dashboard for Clinical Decision Support
+The Power BI dashboard could be adapted into a clinical tool with:
+- Live scan upload & auto-analysis
+- Diagnosis probability indicators
+- Patient progression tracking over time
+
+#### 4. Use This Workflow for Other Brain Disorders
+This same pipeline (image ➝ features ➝ dataset ➝ dashboard) can be re-used for:
+- Parkinson’s Disease
+- Brain Tumor classification
+- Stroke damage comparison
 
 ### Future Work
+- Build predictive ML models (e.g., CNNs)
+- Develop a web dashboard using Streamlit or Flask
+- Integrate with medical diagnosis APIs or electronic health records
